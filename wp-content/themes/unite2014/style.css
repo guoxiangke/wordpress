@@ -1,0 +1,18 @@
+/*
+Theme Name: Unite subtheme 2014
+Author: Dale.Guo@profero.com
+Author URI: http://wordpress.org/
+Template: unite
+Theme URI: http://wordpress.org/themes/twentytwelve
+Description: The Unite subtheme 2014 for WordPress is a fully responsive theme that looks great on any device...
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: unite2014
+*/
+@import url("../unite/style.css");
+
+button#searchsubmit .glyphicon-search{
+    font-size: 20px;
+}
