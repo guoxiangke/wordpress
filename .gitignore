@@ -1,3 +1,6 @@
 wp-config.php
 wp-content/uploads
 backup/
+wp-content/*/thumbs/
+wp-content/gallery/
+wp-content/*/*.jpg_backup
