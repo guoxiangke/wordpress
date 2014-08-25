@@ -16,3 +16,9 @@ Text Domain: unite2014
 button.searchsubmit {
 /*    font-size: 20px;*/
 }
+#pie_register .fields .fieldset.error {
+	border: none;
+}
+#pie_register .fields .fieldset.error input{
+	border: #c84040 1px solid;
+}
