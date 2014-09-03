@@ -92,7 +92,7 @@ class Registration_form extends PieReg_Base
 			//$widget = ( ($fromwidget)? ' pie_widget-2 #' : '' );
 			$label2 = (isset($this->field['label2']) and !empty($this->field['label2']))? $this->field['label2'] : __("Confirm Password","piereg");
 			
-			$data .= '</div></li><li class="fields pageFields_'.$this->pages.' '.$topclass.'"><div class="fieldset"><label>'.$label2.'</label><input id="confirm_password_'.$this->id.'" type="password" data-errormessage-value-missing="'.$this->field['validation_message'].'" data-errormessage-range-underflow="'.$this->field['validation_message'].'" data-errormessage-range-overflow="'.$this->field['validation_message'].'" class="input_fields '.$this->field['css'].' piereg_validate[required,equals['.$this->id.']]" placeholder="'.$this->field['placeholder'].'" />';	
+			$data .= '</div></li><li class="fields pageFields_'.$this->pages.' '.$topclass.'pageFields-password"><div class="fieldset"><label>'.$label2.'</label><input id="confirm_password_'.$this->id.'" type="password" data-errormessage-value-missing="'.$this->field['validation_message'].'" data-errormessage-range-underflow="'.$this->field['validation_message'].'" data-errormessage-range-overflow="'.$this->field['validation_message'].'" class="input_fields '.$this->field['css'].' piereg_validate[required,equals['.$this->id.']]" placeholder="'.$this->field['placeholder'].'" />';	
 			
 				
 			return $data;
@@ -1129,7 +1129,7 @@ class Registration_form extends PieReg_Base
 				$topclass = "";
 				if($this->label_alignment=="top")
 					$topclass = "label_top";
-				$pie_reg_fields .= '<li class="fields pageFields_'.$this->pages.' '.$topclass.'">';
+				$pie_reg_fields .= '<li class="fields pageFields_'.$this->pages.' '.$topclass.'pageFields-'.$this->field['type'].'">';
 	
 				//When to add label
 				/*switch($this->field['type']) :				

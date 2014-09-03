@@ -41,13 +41,13 @@ function unite2014_scripts() {
 	// 	wp_enqueue_script( 'jquery-masonry' );
 	// }
 
-	// if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
-	// 	wp_enqueue_script( 'twentyfourteen-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery' ), '20131205', true );
-	// 	wp_localize_script( 'twentyfourteen-slider', 'featuredSliderDefaults', array(
-	// 		'prevText' => __( 'Previous', 'twentyfourteen' ),
-	// 		'nextText' => __( 'Next', 'twentyfourteen' )
-	// 	) );
-	// }
+	if ( is_page('75')) {
+		
+		wp_enqueue_script( 'fullPage', get_stylesheet_directory_uri() . '/js/jquery.fullPage.min.js', array('jquery'));
+		wp_enqueue_script( 'photoswipe1', get_stylesheet_directory_uri() . '/1.0.11/lib/simple-inheritance.min.js', array('jquery'));
+		wp_enqueue_script( 'photoswipe2', get_stylesheet_directory_uri() . '/1.0.11/code-photoswipe-1.0.11.min.js', array('jquery'));
+		wp_enqueue_style( 'photoswipe3', get_stylesheet_directory_uri() . '/1.0.11/photoswipe.css');
+	}
 
 	wp_enqueue_script( 'unite2014-script', get_stylesheet_directory_uri() . '/js/functions.js', array( 'jquery' ), '20140319', true );
 }

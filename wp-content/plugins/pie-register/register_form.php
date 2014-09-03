@@ -39,7 +39,7 @@ $registration_from_fields .= '<form enctype="multipart/form-data" id="pie_'.(tri
 if($form->countPageBreaks() > 1){
 	$registration_from_fields .= '<div class="piereg_progressbar"></div>';
 }
-$registration_from_fields .= '<ul id="pie_register">';
+$registration_from_fields .= '<ul id="pie_register" class="trst">';
 
 	   //ob_start();
 	   $output = $form->printFields($fromwidget);

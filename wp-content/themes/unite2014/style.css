@@ -22,3 +22,33 @@ button.searchsubmit {
 #pie_register .fields .fieldset.error input{
 	border: #c84040 1px solid;
 }
+
+/* /?page_id=280 Pie Register – Registration page*/
+
+.pageFields-password{
+	display: none;
+}
+#pie_register .fields select{
+	height: 27px;
+	width: auto;	
+	color: #000;
+}
+
+
+.page-id-280 #primary {	
+	background-image: url('http://love.yongbuzhixi.com/334.jpg');
+	background-position: center 48px;
+	background-repeat: no-repeat;
+}
+#pie_register_reg_form {
+	width: 50%;
+}
+
+#pie_register li.fields p.desc {
+	color: #c84040;
+	font-size: 12px;
+}
+
+#pie_register .fields .input_fields {
+	color: #000;
+}
