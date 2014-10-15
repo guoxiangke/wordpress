@@ -40,9 +40,13 @@ function unite2014_scripts() {
 	// if ( is_active_sidebar( 'sidebar-3' ) ) {
 	// 	wp_enqueue_script( 'jquery-masonry' );
 	// }
-
+	if(!is_admin()){     
+	    wp_deregister_script( 'jquery-ui-core' );
+		wp_enqueue_script('jquery-ui-core', get_stylesheet_directory_uri().'/js/jquery-ui.min.js', array('jquery'), '1.10.4', 1 );
+	}
 	if ( is_page('75')) {
 		
+		// wp_enqueue_style( 'fullPage', get_stylesheet_directory_uri() . '/jquery.fullPage.css');
 		wp_enqueue_script( 'fullPage', get_stylesheet_directory_uri() . '/js/jquery.fullPage.min.js', array('jquery'));
 		wp_enqueue_script( 'photoswipe1', get_stylesheet_directory_uri() . '/1.0.11/lib/simple-inheritance.min.js', array('jquery'));
 		wp_enqueue_script( 'photoswipe2', get_stylesheet_directory_uri() . '/1.0.11/code-photoswipe-1.0.11.min.js', array('jquery'));

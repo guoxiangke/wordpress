@@ -33,15 +33,5 @@
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<script type="text/javascript">
-	
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    menu: '#menu-main-menu',
-    paddingTop: 56,
-    paddingBottom: 56,
-});
-});
-</script>
+
 <?php get_footer(); ?>

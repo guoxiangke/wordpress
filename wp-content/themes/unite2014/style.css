@@ -35,15 +35,6 @@ button.searchsubmit {
 }
 
 
-.page-id-280 #primary {	
-	background-image: url('http://love.yongbuzhixi.com/334.jpg');
-	background-position: center 48px;
-	background-repeat: no-repeat;
-}
-#pie_register_reg_form {
-	width: 50%;
-}
-
 #pie_register li.fields p.desc {
 	color: #c84040;
 	font-size: 12px;
@@ -52,3 +43,4 @@ button.searchsubmit {
 #pie_register .fields .input_fields {
 	color: #000;
 }
+
